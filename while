@@ -1,0 +1,36 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+
+
+            System.out.println("type guss");
+            int tries = 1;
+           int guss = s.nextInt();
+            while (guss!=77){
+                System.out.println("sorry, wrong number");
+                System.out.println("guess again");
+                tries ++;
+                guss = s.nextInt();
+
+
+            }
+        System.out.println(String.format("very good! took you %d tries", tries));
+
+
+        }
+
+
+
+
+
+
+
+}
+
