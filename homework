@@ -1,0 +1,60 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("type a,b");
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        if (a > b) {
+            System.out.println(String.format("%d>%d", a, b));
+        } else if (b > a) {
+            System.out.println(String.format("%d >%d", b, a));
+        } else {
+            System.out.println(String.format("%d == %d", a, b));
+        }
+
+        int l = 5;
+
+        while (l < 11) {
+            System.out.println(l);
+            l++;
+        }
+
+        System.out.println("input your number");
+        int nu = s.nextInt();
+        while (nu <= 100) {
+            System.out.println("sorry, try again");
+            nu = s.nextInt();
+        }
+        System.out.println("good you printed a number bigger than 100");
+
+
+        int evan = 4;
+        while (evan>=4 && evan<101 ){
+            System.out.println(evan);
+            evan +=2;
+
+        }
+        System.out.println("type 2 same numbers");
+        int nu1 = s.nextInt();
+        int nu2 = s.nextInt();
+        while (nu1 != nu2){
+            System.out.println("not the same, try again");
+            nu1 = s.nextInt();
+            nu2 = s.nextInt();
+
+        }
+        System.out.println("good, you printed 2 same numbers");
+    }
+
+
+
+}
+
